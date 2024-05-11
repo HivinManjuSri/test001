@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
         var searchInput = document.getElementById('search').value;
         
         if (searchInput.toLowerCase().includes('<script>alert(1)</script>')) {
-            alert('FLAG!@#$%WELL%^&DONE');
-            
+            alert('1');
+            console.log("FLAG!@#$%WELL%^&DONE");
             event.preventDefault();
             
         }
