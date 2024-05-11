@@ -5,13 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
         var searchInput = document.getElementById('search').value;
 
         if (searchInput.toLowerCase().includes('<script>alert(1)</script>')) {
-            alert('Potential XSS attack detected!');
+            alert('1');
             console.log("FLAG!@#$%WELL%^&DONE");
             event.preventDefault();
-        } else if (searchInput.toLowerCase() === 'correct answer') {
-            var flagElement = document.createElement('p');
-            flagElement.textContent = "FLAG!@#$%WELL%^&DONE";
-            document.body.appendChild(flagElement);
         }
     });
 });
